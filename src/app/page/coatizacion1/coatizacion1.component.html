@@ -1,0 +1,35 @@
+<div></div>
+<router-outlet></router-outlet>
+<div class="main" [hidden]="route.children.length!==0">
+    <div></div>
+
+    <div type="Menú"></div>
+    <div></div>
+    <h1>NUEVA COATIZACION</h1>
+
+    <p>Seleccione las preferencias:</p>
+
+    <form (ngSubmit)="submitForm()">
+
+        <div>
+            <label for="tipo_tasa">TIPO DE TASA:</label>
+            <input type="checkbox" formControlName="tNominal" [value]="true"> TASA NOMINAL
+            <input type="checkbox" formControlName="tEfectiva" [value]="true"> TASA EFECTIVA
+        </div>
+        <br>
+        <div>
+            <label for="capitalizar">CAPITALIZACIÓN:</label>
+        </div>
+        <br>
+        <div>
+            <label for="per_gracia">PERIODO DE GRACIA:</label>
+        </div>
+        <br>
+        <div>
+            <label for="moneda">MONEDA:</label>
+            <input type="checkbox" formControlName="Soles" [value]="true"> SOLES
+            <input type="checkbox" formControlName="Dolares" [value]="true"> DOLARES
+        </div>
+        <br>
+        <button type="submit" routerLink="configurar">CONTINUAR</button>
+    </form>

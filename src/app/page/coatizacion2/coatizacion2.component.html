@@ -1,0 +1,30 @@
+<router-outlet></router-outlet>
+<div class="main">
+    <h1>NUEVA COTIZACION</h1>
+
+    <form (ngSubmit)="Crear_coatizacion()">
+
+        <div>
+            <label for="inmueble">INMUEBLE:</label>
+        </div>
+        <br>
+        <div class="valor">
+            <label>MONTO: </label>
+            <input class="no-spinners" type="number" name="monto" [(ngModel)]="monto" required>
+        </div>
+        <br>
+        <div>
+            <label for="periodo">PERIODO: </label>
+            <input class="no-spinners" type="number" name="periodo" [(ngModel)]="periodo" required>
+        </div>
+        <br>
+        <div>
+            <label for="tasa">TASA: </label>
+            <input class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
+        </div>
+        <br>
+        <button type="submit">Aceptar</button>
+        <button routerLink="/Mi-Vivienda/nueva-cotizacion">Cancelar</button>
+    </form>
+    <!--<p *ngIf="cuota">La cuota es: {{cuota}}</p>-->
+</div>

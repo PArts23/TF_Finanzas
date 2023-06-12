@@ -1,0 +1,16 @@
+<body>
+    <app-home></app-home>
+    <form [formGroup]="myForm" autocomplete="off">  
+        <mat-form-field appearance="legacy">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Email">
+        </mat-form-field> <br>
+    
+        <mat-form-field appearance="legacy">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password" placeholder="Contraseña">
+        </mat-form-field> <br>
+
+        <button mat-raised-button (click)="loginUser()">Ingresar</button>
+    </form>
+</body>

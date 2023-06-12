@@ -1,0 +1,14 @@
+.main {
+    margin-left: 250px;
+    /* Asegura que el contenido principal no se solape con la barra de navegación */
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
