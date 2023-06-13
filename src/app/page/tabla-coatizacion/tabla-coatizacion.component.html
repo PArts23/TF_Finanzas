@@ -1,0 +1,32 @@
+<div class="main">
+
+  <h1>SU COTIZACION</h1>
+  <h3>Fecha: {{fecha}}</h3>
+  <h3>Tasa: {{tasa | number:'1.2-2'}} %</h3>
+  <h3>Periodo: {{periodo}} meses</h3>
+  <h3>Préstamo: S/ {{monto | number:'1.2-2'}}</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>PERIODO</th>
+        <th>CUOTA</th>
+        <th>AMORTIZACION</th>
+        <th>INTERES</th>
+        <th>DEUDA PENDIENTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pago of pagos">
+        <td> {{ pago.periodo }}</td>
+        <td>S/ {{ pago.cuota | number:'1.2-2'}}</td>
+        <td>S/ {{ pago.amortizacion | number:'1.2-2'}}</td>
+        <td>S/ {{ pago.interes | number:'1.2-2'}}</td>
+        <td>S/ {{ pago.saldo | number:'1.2-2'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button routerLink="/Mi-Vivienda/nueva-cotizacion/configurar">ATRÁS</button>
+
+</div>

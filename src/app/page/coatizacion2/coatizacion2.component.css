@@ -1,0 +1,22 @@
+.main {
+  margin-left: 250px;
+  /* Asegura que el contenido principal no se solape con la barra de navegación */
+  padding: 20px;
+}
+
+input {
+  border-color: transparent;
+  border-bottom-color: black;
+  border-bottom-color: 5px;
+  outline: none;
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+  -moz-appearance: textfield;
+}
