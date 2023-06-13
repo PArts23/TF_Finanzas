@@ -8,7 +8,7 @@ import { MenuComponent } from './page/menu/menu.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/Mi-Vivienda', pathMatch: 'full' },
+  { path: '', redirectTo: '/Mi-Vivienda/Inicio', pathMatch: 'full' },
   {
     path: 'Mi-Vivienda', component: MenuComponent, children: [
 
