@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Pago } from '../model/Pago';
-import { Coatizacion1Component } from '../page/coatizacion1/coatizacion1.component';
-import { Coatizacion2Component } from './../page/coatizacion2/coatizacion2.component';
 
 @Injectable({
   providedIn: 'root'

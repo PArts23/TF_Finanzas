@@ -2,25 +2,25 @@
 <div class="main">
     <h1>NUEVA COTIZACION</h1>
 
-    <form (ngSubmit)="Crear_coatizacion()">
+    <form (ngSubmit)="Crear_coatizacion()" >
 
         <div>
-            <label for="inmueble">INMUEBLE:</label>
-        </div>
-        <br>
-        <div class="valor">
-            <label>MONTO: </label>
-            <input class="no-spinners" type="number" name="monto" [(ngModel)]="monto" required>
+            <label for="inmueble">Inmueble:</label>
         </div>
         <br>
         <div>
-            <label for="periodo">PERIODO: </label>
-            <input class="no-spinners" type="number" name="periodo" [(ngModel)]="periodo" required>
+            <label style="padding-right: 20px;">Monto: </label>
+            <input frmControlName="monto" class="no-spinners" type="number" name="monto" [(ngModel)]="monto" required>
         </div>
         <br>
         <div>
-            <label for="tasa">TASA: </label>
-            <input class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
+            <label style="padding-right: 13px;">Periodo: </label>
+            <input frmControlName="periodo" class="no-spinners" type="number" name="periodo" [(ngModel)]="periodo" required>
+        </div>
+        <br>
+        <div>
+            <label style="padding-right: 30px;">Tasa: </label>
+            <input frmControlName="tasa" class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
         </div>
         <br>
         <button type="submit">Aceptar</button>
