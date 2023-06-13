@@ -3,3 +3,14 @@
     /* Asegura que el contenido principal no se solape con la barra de navegación */
     padding: 20px;
 }
+
+.button-area{
+    margin-top: 500px;
+    margin-left: 250px;
+}
+
+.mat-primario{
+    background-color: #99BC39;
+    margin-left: 10px;
+    margin-right: 10px;
+}

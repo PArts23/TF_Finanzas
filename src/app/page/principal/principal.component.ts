@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css']
+  styleUrls: ['./principal.component.css'],
+    
 })
 export class PrincipalComponent implements OnInit {
 

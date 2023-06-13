@@ -16,6 +16,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MisCoatizacionesComponent } from './page/mis-coatizaciones/mis-coatizaciones.component';
 import { TablaCoatizacionComponent } from './page/tabla-coatizacion/tabla-coatizacion.component';
 import { MenuComponent } from './page/menu/menu.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MenuComponent } from './page/menu/menu.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
