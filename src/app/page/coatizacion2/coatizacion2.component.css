@@ -20,3 +20,9 @@ input {
 .no-spinners {
   -moz-appearance: textfield;
 }
+
+.mat-primario{
+  background-color: #99BC39;
+  margin-left: 10px;
+  margin-right: 10px;
+}

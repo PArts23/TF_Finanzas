@@ -23,8 +23,11 @@
             <input frmControlName="tasa" class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
         </div>
         <br>
-        <button type="submit">Aceptar</button>
-        <button routerLink="/Mi-Vivienda/nueva-cotizacion">Cancelar</button>
+        <div>
+            <button mat-raised-button type="submit" color="primario">Aceptar</button>
+            <button mat-raised-button routerLink="/Mi-Vivienda/nueva-cotizacion" color="primario">Cancelar</button>
+        </div>
+        
     </form>
     <!--<p *ngIf="cuota">La cuota es: {{cuota}}</p>-->
 </div>
