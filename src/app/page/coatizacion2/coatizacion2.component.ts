@@ -15,17 +15,19 @@ export class Coatizacion2Component {
   monto: number = 0;
   periodo: number = 0;
   tasa: number = 0;
+  seguro: number = 0;
   pagos: Pago[] = [];
   cuota: number = 0;
 
   constructor(private planService: PlanService, private datosService: DatosService, private router: Router) { }
 
   Crear_coatizacion() {
-    this.pagos = this.planService.Calcular_cuotizacion(this.tasa, this.monto, this.periodo);
+    this.pagos = this.planService.Calcular_cuotizacion(this.tasa, this.monto, this.periodo, this.seguro);
     this.datosService.setPagos(this.pagos);
     this.datosService.setPeriodo(this.periodo);
     this.datosService.setMonto(this.monto);
     this.datosService.setTasa(this.tasa);
+    this.datosService.setTasa(this.seguro);
     this.router.navigateByUrl('/Mi-Vivienda/nueva-cotizacion/cronograma');
 
     //this.cuota = this.planService.Calcular_cuota(this.tasa, this.monto, this.periodo);
