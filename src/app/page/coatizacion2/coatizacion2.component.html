@@ -23,19 +23,20 @@
             <input frmControlName="tasa" class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
         </div>
         <br>
+        <br>
         <div>
-<<<<<<< HEAD
+            <label style="padding-right: 30px;">Tasa de Seg. desgravamen: </label>
+            <input frmControlName="seguro" class="no-spinners" type="number" name="seguro" [(ngModel)]="seguro" required>
+        </div>
+        <br>
+        <div>
+
             <button mat-raised-button type="submit" color="primario">Aceptar</button>
             <button mat-raised-button routerLink="/Mi-Vivienda/nueva-cotizacion" color="primario">Cancelar</button>
         </div>
         
-=======
-            <label style="padding-right: 30px;">Tasa de Seg. desgravamen: </label>
-            <input frmControlName="seguro" class="no-spinners" type="number" name="seguro" [(ngModel)]="seguro" required>
-        </div>
-        <button type="submit">Aceptar</button>
-        <button routerLink="/Mi-Vivienda/nueva-cotizacion">Cancelar</button>
->>>>>>> 80e9b9433225802d0d7e572e06af4340217e4d87
+     
+        
     </form>
     <!--<p *ngIf="cuota">La cuota es: {{cuota}}</p>-->
 </div>
