@@ -9,20 +9,42 @@
 
     <p>Seleccione las preferencias:</p>
 
-    <form (ngSubmit)="submitForm()">
+    <form (ngSubmit)="Subir_condiciones()">
 
         <div>
             <label for="tipo_tasa">TIPO DE TASA:</label>
-            <input type="checkbox" formControlName="tNominal" [value]="true"> TASA NOMINAL
-            <input type="checkbox" formControlName="tEfectiva" [value]="true"> TASA EFECTIVA
+            <label>
+                <input type="checkbox" name="tasa" [(ngModel)]="tasaEfectiva" (ngModelChange)="onCheckboxChange()" checked>
+                Tasa Efectiva
+            </label>
+            <label>
+                <input type="checkbox" name="tasa" [(ngModel)]="tasaNominal" (ngModelChange)="onCheckboxChange()">
+                Tasa Nominal
+            </label>
         </div>
         <br>
         <div>
-            <label for="capitalizar">CAPITALIZACIÓN:</label>
+            <label for="dropdown">CAPITALIZACION: </label>
+            <select id="dropdown">
+                <option value="diaria">Diaria</option>
+                <option value="semanal">Semanal</option>
+                <option value="quincenal">Quincenal</option>
+                <option value="mensual">Mensual</option>
+                <option value="bimestral">Bimestral</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="cuatrimestral">Cuatrimestral</option>
+                <option value="semestral">Semestral</option>
+                <option value="anual">Anual</option>
+            </select>
         </div>
         <br>
         <div>
-            <label for="per_gracia">PERIODO DE GRACIA:</label>
+            <label for="per_gracia">PERIODO DE GRACIA: </label>
+            <select id="dropdown">
+                <option value="no_periodo">-------</option>
+                <option value=" parcial">Parcial</option>
+                <option value="total">Total</option>
+            </select>
         </div>
         <br>
         <div>

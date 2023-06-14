@@ -9,8 +9,14 @@ h1 {
     font-family: nunito;
 }
 
+<<<<<<< HEAD
 .button-price{
     border: 2px solid #99BC39; /* Replace #ff0000 with your desired color value */
     background-color: white;
     padding: 5px;
+=======
+select{
+
+    text-align: center;
+>>>>>>> 36659b2de47262326428bc230fd39eb13aa4eab8
 }

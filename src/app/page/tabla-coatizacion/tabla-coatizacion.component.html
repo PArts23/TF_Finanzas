@@ -1,11 +1,11 @@
 <div class="main">
-  
+
   <h1>SU COTIZACION</h1>
-  <h3>Fecha: </h3>
-  <h3>Tasa: %</h3>
-  <h3>Periodo: </h3>
-  <h3>Préstamo: S/ </h3>
-  
+  <h3>Fecha: {{fecha}}</h3>
+  <h3>Tasa: {{tasa | number:'1.2-2'}} %</h3>
+  <h3>Periodo: {{periodo}} meses</h3>
+  <h3>Préstamo: S/ {{monto | number:'1.2-2'}}</h3>
+
   <table>
     <thead>
       <tr>
