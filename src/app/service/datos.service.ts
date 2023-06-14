@@ -10,6 +10,7 @@ export class DatosService {
   private monto: number = 0;
   private periodo: number = 0;
   private tasa: number = 0;
+  private tasa_seg: number = 0;
 
   setPagos(pagos: Pago[]) {
     this.pagos = pagos;
@@ -41,5 +42,13 @@ export class DatosService {
 
   getTasa() {
     return this.tasa;
+  }
+
+  setTasaSeg(tasa_seg: number) {
+    this.tasa_seg = tasa_seg;
+  }
+
+  getTasaSeg() {
+    return this.tasa_seg;
   }
 }

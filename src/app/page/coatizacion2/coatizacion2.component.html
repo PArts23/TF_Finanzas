@@ -23,6 +23,10 @@
             <input frmControlName="tasa" class="no-spinners" type="number" name="tasa" [(ngModel)]="tasa" required>
         </div>
         <br>
+        <div>
+            <label style="padding-right: 30px;">Tasa de Seg. desgravamen: </label>
+            <input frmControlName="seguro" class="no-spinners" type="number" name="seguro" [(ngModel)]="seguro" required>
+        </div>
         <button type="submit">Aceptar</button>
         <button routerLink="/Mi-Vivienda/nueva-cotizacion">Cancelar</button>
     </form>
