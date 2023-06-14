@@ -12,6 +12,7 @@
         <th>PERIODO</th>
         <th>CUOTA</th>
         <th>AMORTIZACION</th>
+        <th>SEG. DESGRAVAMEN</th>
         <th>INTERES</th>
         <th>DEUDA PENDIENTE</th>
       </tr>
@@ -21,6 +22,7 @@
         <td> {{ pago.periodo }}</td>
         <td>S/ {{ pago.cuota | number:'1.2-2'}}</td>
         <td>S/ {{ pago.amortizacion | number:'1.2-2'}}</td>
+        <td>S/ {{ pago.monto_seguro| number:'1.2-2'}}</td>
         <td>S/ {{ pago.interes | number:'1.2-2'}}</td>
         <td>S/ {{ pago.saldo | number:'1.2-2'}}</td>
       </tr>

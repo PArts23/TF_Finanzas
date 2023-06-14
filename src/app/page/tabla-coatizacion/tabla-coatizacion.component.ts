@@ -13,6 +13,7 @@ export class TablaCoatizacionComponent implements OnInit {
   monto: number = 0;
   periodo: number = 0;
   tasa: number = 0;
+  tasa_seg: number = 0;
   fecha: string = "";
 
   constructor(private datosService: DatosService) { }
@@ -22,6 +23,7 @@ export class TablaCoatizacionComponent implements OnInit {
     this.monto = this.datosService.getMonto();
     this.periodo = this.datosService.getPeriodo();
     this.tasa = this.datosService.getTasa();
+    this.tasa_seg = this.datosService.getTasaSeg();
     this.fecha = this.Obtener_fecha();
   }
 
