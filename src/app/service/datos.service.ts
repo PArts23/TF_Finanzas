@@ -51,4 +51,22 @@ export class DatosService {
   getTasaSeg() {
     return this.tasa_seg;
   }
+
+  getVNA() {
+
+    let VAN: number = this.pagos[0].cuota * ((1 - Math.pow(1 + this.tasa, -this.periodo) / this.tasa));
+
+    return this.monto + VAN;
+  }
+
+  getTIR() {
+
+    let TIR: number = this.monto;
+
+    for (let i = 1; i <= this.pagos.length; i++) {
+
+      TIR += this.pagos[i].cuota / (1 + this.tasa, i)
+    }
+    return TIR;
+  }
 }

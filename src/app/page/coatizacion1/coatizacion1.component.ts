@@ -17,31 +17,20 @@ export class Coatizacion1Component {
   string = '';
   capitalizar: string = '';
   per_gracia: string = '';
-  moneda: string = '';
+  soles = false;
+  dolares = false;
 
   constructor(public route: ActivatedRoute, private planService: PlanService) {
 
     this.formulario = new FormGroup({
+
       Soles: new FormControl(true),
       Dolares: new FormControl(false)
     });
   }
 
-  onCheckboxChange() {
-    if (this.tasaEfectiva && this.tasaNominal!) {
-      this.tasaNominal = true;
-      this.tasaEfectiva = false;
-    }
-
-    else
-      if (this.tasaEfectiva! && this.tasaNominal) {
-        this.tasaNominal = false;
-        this.tasaEfectiva = true;
-      }
-  }
-
   Subir_condiciones() {
 
-    //this.planService. ;
+    this.planService.Cargar_condiciones(this.tasaNominal, this.tasaEfectiva, this.capitalizar, this.soles, this.dolares);
   }
 }

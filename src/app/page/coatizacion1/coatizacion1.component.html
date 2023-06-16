@@ -14,13 +14,28 @@
         <div>
             <label for="tipo_tasa">TIPO DE TASA:</label>
             <label>
-                <input type="checkbox" name="tasa" [(ngModel)]="tasaEfectiva" (ngModelChange)="onCheckboxChange()" checked>
+                <input type="checkbox" name="tasa" [(ngModel)]="tasaEfectiva">
                 Tasa Efectiva
             </label>
             <label>
-                <input type="checkbox" name="tasa" [(ngModel)]="tasaNominal" (ngModelChange)="onCheckboxChange()">
+                <input type="checkbox" name="tasa" [(ngModel)]="tasaNominal">
                 Tasa Nominal
             </label>
+        </div>
+        <br>
+        <div>
+            <label for="frecuencia">CAPITALIZACION: </label>
+            <select id="dropdown">
+                <option value="diaria">Diaria</option>
+                <option value="semanal">Semanal</option>
+                <option value="quincenal">Quincenal</option>
+                <option value="mensual">Mensual</option>
+                <option value="bimestral">Bimestral</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="cuatrimestral">Cuatrimestral</option>
+                <option value="semestral">Semestral</option>
+                <option value="anual">Anual</option>
+            </select>
         </div>
         <br>
         <div>

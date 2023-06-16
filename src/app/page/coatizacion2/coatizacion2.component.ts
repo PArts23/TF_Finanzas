@@ -27,7 +27,7 @@ export class Coatizacion2Component {
     this.datosService.setPeriodo(this.periodo);
     this.datosService.setMonto(this.monto);
     this.datosService.setTasa(this.tasa);
-    this.datosService.setTasa(this.seguro);
+    this.datosService.setTasaSeg(this.seguro);
     this.router.navigateByUrl('/Mi-Vivienda/nueva-cotizacion/cronograma');
 
     //this.cuota = this.planService.Calcular_cuota(this.tasa, this.monto, this.periodo);
